@@ -1,0 +1,132 @@
+.skills-content{
+    position: relative;
+    top: 230px;
+}
+.skills-exception-header{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+}
+.skills-exception{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.skill-card{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a15864;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 7px;
+    padding: 0px 20px;
+    box-shadow:2px 2px 12px rgba(219, 174, 174, 0.5); 
+    margin-top: 30px;
+}
+.skill-name{
+    display: flex;
+    align-items: center;
+    i{
+        color:rgb(238, 237, 237);
+    }
+}
+.skill-skillname{
+    margin-left: 7px;
+    font-size: 1.7rem;
+    letter-spacing: .5px;
+    font-weight: bold;
+    color: rgb(238, 237, 237);
+}
+.skill-bar{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 5px;
+    background-color: #3a161b;
+    border-radius: 7px;
+}
+.skill-percentage{
+    font-size: 1.7rem;
+    letter-spacing: .5px;
+    font-weight: bold;
+    color: rgb(238, 237, 237);
+}
+.skills-image{
+    width: 30%;
+    margin-left:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html-bar{
+    width: 85%;
+}
+.css-bar{
+    width: 75%;
+}
+.js-bar{
+    width: 65%;
+}
+.uı-ux-bar{
+    width: 65%;
+}
+.figma-bar{
+    width: 70%;
+}
+
+@media (max-width:992px){
+    .skills-data{
+        position: relative;
+        left: 0px;
+        width: 65%;
+    }
+    .skills-image{
+        width: 20%;
+        img{
+            position: relative;
+            top: 50px;
+            right: 30px;
+            height: 300px;
+        }
+    }
+}
+@media (max-width:768px){
+    .skills-data{
+        top: 50px;
+        order: 2;
+        width: 100%;
+    }
+    .section-title{
+        top:100px;
+    }
+    .skills-content{
+        top: 100px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills-links{
+        text-align: center;
+    }
+    .skill-card{
+        width: 100%;
+    }
+    .skills-image{
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        top: 0px;
+        img{
+            top: 0px;
+            height: 400px;
+        }
+    }
+}

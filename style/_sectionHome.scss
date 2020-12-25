@@ -1,0 +1,142 @@
+.home-section{
+    height: calc(100vh - 64px);
+    width: 100%;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-data{
+    bottom: 100px;
+    position: relative;
+    left: 100px;
+    
+
+    .home-title , .typing{
+        line-height: 1.5;
+        font-size: 6rem;
+
+        .home-title-name{
+            font-size: 6rem;
+            color:#7C1424;
+            font-weight: bold;
+
+        }
+    }
+}
+.typing{
+    position: relative;
+}
+.typing::after{
+    margin-left: 10px;
+    position: absolute;
+    content: "";
+    top: 10px;
+    width: 1px;
+    height: 7rem;
+    border: 2px solid #7C1424;
+    animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+
+#htb{
+    outline: none;
+}
+
+.home-title-button{
+    margin-top: 20px;
+    width: 145px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #7C1424;
+    color:rgb(238, 237, 237);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+
+    &:hover{
+        border: 2px solid #7C1424;
+        color:#7C1424 ;
+        background-color: white;
+        font-weight: 700;
+        
+    }
+}
+
+
+
+.home-image{
+    position: relative;
+    left: 30px;
+    bottom: 100px;
+    text-align: center;
+}
+
+.home-social{
+    bottom: 100px;
+    position: relative;
+    left: 8%;    
+    width: 25%;
+}
+
+
+.home-social-links{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+.home-social-item i{
+    color: #7C1424;
+    font-size: 2rem;
+}
+.fa-linkedin-in:hover{
+    color:#0A66C2;
+}
+.fa-github:hover{
+    color: #06090F;
+}
+.fa-instagram:hover{
+    color:#ED4956;
+}
+.fa-facebook-f:hover{
+    color:#1298F6;
+}
+.fa-twitter:hover{
+    color:#00ACED;
+}
+
+@media (max-width:1200px){
+    .home-section{
+        display: inline-block;
+    }
+    .home-image{
+        position: relative;
+        bottom: 0;
+        img{
+            position: absolute;
+            right: 10%;
+        }
+    }
+    .home-data{
+        top: 10%;
+    }
+    .home-social{
+        left: 10%;
+        width: 40%;
+    }
+}
+

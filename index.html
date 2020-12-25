@@ -1,69 +1,258 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="pace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 
-    
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Hi! I'am Furkan</title>
-  </head>
-  <body>
-    
-    <!-- PRELOADER -->
-    <div id="preloader">
-        <div class="p">LOADING</div>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="./scripts/pace.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./style/style.css">
+
+
+  <title>Hi! I'am Furkan</title>
+</head>
+
+<body>
+
+  <!-- PRELOADER -->
+
+
+
+  <header>
+    <nav class="container">
+      <div class="nav-logo">
+        <a href="#"><img src="./images/afterimage/Group 1.png" class="nav-img"></a>
+        <a href="#" class="logo-item">Furkan Lebit</a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#" class="nav-item">Home</a></li>
+        <li class="nav-link"><a href="#about" class="nav-item">About</a></li>
+        <li class="nav-link"><a href="#skills" class="nav-item">Skills</a></li>
+        <li class="nav-link"><a href="#services" class="nav-item">Services</a></li>
+        <li class="nav-link"><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+  <a href="#"><img class="backtotop" src="./images/afterimage/backttıop.png" alt=""></a>
+  <main>
+    <div class="section" id="home">
+      <div class="container">
+        <div class="home-section">
+          <div class="home-data">
+            <h1 class="home-title">Hi,<br>I am <span class="home-title-name">Furkan</span>,<br><span
+                class="typing">Extra Ordinary Person</span> </h1>
+            <button id="htb" class="home-title-button">Download CV</button>
+          </div>
+          <div class="home-image">
+            <img src="./images/preimage/sec1.png" alt="Hello it's me">
+          </div>
+        </div>
+        <div class="home-social">
+          <ul class="home-social-links">
+            <li class="home-social-link">
+              <a href="https://www.linkedin.com/in/furkan-lebit-73a3ab1a2/" class="home-social-item"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="home-social-link">
+              <a href="https://github.com/furkanlebit7" class="home-social-item"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="home-social-link">
+              <a href="https://www.instagram.com/furkanlebit7/" class="home-social-item"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li class="home-social-link">
+              <a href="https://www.facebook.com/furkanlebit/" class="home-social-item"><i
+                  class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="home-social-link ">
+              <a href="https://twitter.com/furkanlebit7" class="home-social-item"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div class="section" id="about">
+      <div class="container">
+        <h2 class="section-title" id="about-title">ABOUT</h2>
+        <div class="row justify-content-md-center about-content">
+          <div class="about-image col-6"><img src="./images/preimage/about.png" alt=""></div>
+          <div class="about-text col-6">
+            <h3 class="about-data-header">I'm Furkan</h3>
+            <p class="about-data-text">I am a second year software engineering student at Sabahattin Zaim University.In
+              my career that I decided to continue as a full-stack developer, I decided to improve myself firstly on the
+              front-end side. I've been working on the front-end for a while, I develop myself by doing projects, and
+              this site is one of them. When I feel good on the front-end, I can start my work for the back-end</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title col-12" id="skills-title">SKILLS</h2>
+        <div class="row justify-content-md-center skills-content">
+          <div class="skills-data col-6">
+            <div class="skills-links">
+              <h3 class="skills-exception-header">Professional Skills</h3>
+              <p class="skills-exception">I try to improve myself as much as possible in the graphics part as well as in
+                the code part to do good work in the front-end side.</p>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="fab fa-html5 fa-3x"></i>
+                  <span class="skill-skillname">HTML5</span>
+                </div>
+                <div class="skill-bar html-bar"></div>
+                <div class="skill-percentage">%85</div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="fab fa-css3-alt fa-3x"></i>
+                  <span class="skill-skillname">CSS3</span>
+                </div>
+                <div class="skill-bar css-bar"></div>
+                <div class="skill-percentage">%75</div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="fab fa-js fa-3x"></i>
+                  <span class="skill-skillname">JAVASCRIPT</span>
+                </div>
+                <div class="skill-bar js-bar"></div>
+                <div class="skill-percentage">%65</div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="far fa-paint-brush fa-3x"></i>
+                  <span class="skill-skillname">UI/UX</span>
+                </div>
+                <div class="skill-bar uı-ux-bar"></div>
+                <div class="skill-percentage">%65</div>
+              </div>
+              <div class="skill-card">
+                <div class="skill-name">
+                  <i class="fab fa-figma fa-3x"></i>
+                  <span class="skill-skillname">FIGMA</span>
+                </div>
+                <div class="skill-bar figma-bar"></div>
+                <div class="skill-percentage">%70</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-image col-6">
+            <img src="./images/preimage/skills.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="services">
+      <h2 class="section-title col-12" id="skills-title">SERVICES</h2>
+      <div class=" services-content">
+        <div class="card">
+          <i class="fas fa-pen-fancy fa-6x"></i>
+          <h4 class="card-name">Web Design</h4>
+          <p class="card-explanation">I do ui ux design for your web or mobile app.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-laptop-code fa-6x"></i>
+          <h4 class="card-name">Web Development</h4>
+          <p class="card-explanation">I develop responsive website using html,css, javascript.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-palette fa-6x"></i>
+          <h4 class="card-name">Graphic Design</h4>
+          <p class="card-explanation">I will do logo design and graphic design.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <h2 class="section-title" id="contact__title">CONTACT</h2>
+      <div class="hidden-alert"></div>
+      <div class="contact-content">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput3">Subject</label>
+            <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Hi..."></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <h1 class="footer-name">Furkan Lebit</h1>
+      <ul class="footer-social-links">
+        <li class="footer-social-link">
+          <a href="https://www.linkedin.com/in/furkan-lebit-73a3ab1a2/" class="footer-social-item"><i
+              class="fab fa-linkedin-in fa-2x"></i></a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://github.com/furkanlebit7" class="footer-social-item"><i class="fab fa-github fa-2x"></i></a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://www.instagram.com/furkanlebit7/" class="footer-social-item"><i
+              class="fab fa-instagram fa-2x"></i></a>
+        </li>
+        <li class="footer-social-link">
+          <a href="https://www.facebook.com/furkanlebit/" class="footer-social-item"><i
+              class="fab fa-facebook-f fa-2x"></i></a>
+        </li>
+        <li class="footer-social-link ">
+          <a href="https://twitter.com/furkanlebit7" class="footer-social-item"><i class="fab fa-twitter fa-2x"></i></a>
+        </li>
+      </ul>
+      <p class="footer-cop">© 2020 copyright all right reserved</p>
+    </div>
+  </footer>
 
 
-    <h1 class="title">Furkan Lebit</h1>
-
-    
-
-    <script type="text/javascript">
-
-    paceOptions = {
-    ajax: true,
-    document: true,
-    eventLag: false
-    };
-
-    Pace.on('done', function() {
-    $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
-
-
-    $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
-
-    TweenMax.from(".title", 2, {
-         delay: 1.8,
-              y: 10,
-              opacity: 0,
-              ease: Expo.easeInOut
-        })
-   });
-
-  </script>
 
 
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    <script src="app.js"></script>
-    
-  </body>
+
+
+
+  <script src="./scripts/app.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
 </html>

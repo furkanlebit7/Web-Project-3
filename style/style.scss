@@ -1,0 +1,80 @@
+*{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  list-style-type: none;
+}
+
+li{
+  list-style: none;
+  list-style-type: none;
+}
+
+main{
+  margin-top: 64px;
+}
+
+.section{
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 64px);
+  align-items: center;
+}
+
+
+.section-title{
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;
+  color: #522027;
+  font-size: 3rem;
+  position: relative;
+  top: 180px;
+    &::after{
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 0.3rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 3.5rem;
+      background-color:#522027
+    }
+}
+.backtotop{
+  cursor: pointer;
+  position: absolute;
+  position: fixed;  
+  bottom: 400px;
+  right: 30px;
+  height: 80px;
+  width: 40px;
+  z-index: 1000000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.backtotop.active{  
+  bottom: 30px;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+@import "./nav";
+@import "./sectionHome";
+@import "./sectionAbout";
+@import "./sectionSkills";
+@import "./sectionServices";
+@import "./sectionContact";
+@import "./footer";

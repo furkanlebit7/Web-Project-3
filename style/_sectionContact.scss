@@ -1,0 +1,64 @@
+.contact-section{
+    width: 500px;
+}
+.contact-content{
+    position: relative;
+    top: 150px;
+    width: 800px;
+    margin: 10px auto;
+}
+.form-group {
+    margin-top: 20px;
+    label{
+        color: #522027;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .form-control{
+        border-color: #522027;
+        font-size: 2rem;
+        outline: #522027;
+        
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    .btn{
+        margin:20px auto;
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: #522027;
+        color: rgb(238, 237, 237);
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        &:hover{
+            background: linear-gradient(0.75turn, #522027,rgb(238, 237, 237), #522027);
+            color: #522027;
+        }
+    }    
+}
+
+
+.alert{
+    font-size: 1.7rem;
+    line-height: 1;
+    position: relative;
+    top: 15vh;
+    width: 50%;
+    text-align: center;
+    height: 5%;
+    margin: 0px auto;
+}
+@media (max-width:1024px){
+    .contact-content{
+        width: 600px;
+    }
+}
+@media (max-width:768px){
+    .contact-content{
+        width: 400px;
+    }
+}
