@@ -95,7 +95,7 @@ button.addEventListener("click", () => {
 
 
 //Send Email
-
+/*
 function emailSend() {
      Email.send({
           
@@ -111,7 +111,7 @@ function emailSend() {
      );
 }
 emailSend();
-
+*/
 
 //Scrool Reveals 
 const sr = ScrollReveal({
