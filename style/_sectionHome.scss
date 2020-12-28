@@ -9,9 +9,31 @@
 }
 
 .home-data{
+    width: 50%;
     bottom: 100px;
     position: relative;
     left: 100px;
+
+    .home-title-a{
+        margin-top: 20px;
+        width: 145px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: #7C1424;
+        color:rgb(238, 237, 237);
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border: none;
+    
+        &:hover{
+            border: 2px solid #7C1424;
+            color:#7C1424 ;
+            background-color: white;
+            font-weight: 700;
+            
+        }
+    }
     
 
     .home-title , .typing{
@@ -53,26 +75,7 @@
     outline: none;
 }
 
-.home-title-button{
-    margin-top: 20px;
-    width: 145px;
-    height: 50px;
-    border-radius: 8px;
-    background-color: #7C1424;
-    color:rgb(238, 237, 237);
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border: none;
 
-    &:hover{
-        border: 2px solid #7C1424;
-        color:#7C1424 ;
-        background-color: white;
-        font-weight: 700;
-        
-    }
-}
 
 
 
@@ -119,24 +122,67 @@
     color:#00ACED;
 }
 
-@media (max-width:1200px){
-    .home-section{
-        display: inline-block;
-    }
-    .home-image{
-        position: relative;
-        bottom: 0;
-        img{
-            position: absolute;
-            right: 10%;
-        }
-    }
+@media screen and (max-width:1200px){
     .home-data{
-        top: 10%;
-    }
-    .home-social{
-        left: 10%;
-        width: 40%;
+        left: 0px;
     }
 }
 
+@media screen and (max-width:992px){
+    .home-section{
+        flex-direction: column;
+        
+    }
+    .home-data{
+        width: 100%;
+        top: 50px;
+    }
+    .home-image{
+        width: 100%;
+        bottom: 65px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .home-social{
+        left: 0px;
+        width: 40%;
+        ul{
+            padding-left: 0px;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:532px){
+
+    .home-data{
+        .home-title , .typing{
+            line-height: 1.5;
+            font-size: 5rem;
+    
+            .home-title-name{
+                font-size: 5rem;
+                color:#7C1424;
+                font-weight: bold;
+    
+            }
+        }
+        .home-title-a{
+            width: 100px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+    }
+    
+    .home-image{
+        width: 80%;
+        right: 100px;
+        img{
+            width: 80%;
+        }
+    }
+}
+.aaa{
+    width: 300px;
+    height: 200px;
+    background-color: black;
+}

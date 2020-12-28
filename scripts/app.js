@@ -95,12 +95,10 @@ button.addEventListener("click", () => {
 
 
 //Send Email
-/*emailSend();
+
 function emailSend() {
      Email.send({
-          //Host : "smtp.gmail.com",
-          //Username : "jsfurkanjs@gmail.com",
-          //Password : "jsfurkanjs7",
+          
           SecureToken: "ec5a15b5-59e2-442f-8627-0e100f34149b",
           To: 'furkanlebit7@hotmail.com',
           From: "jsfurkanjs@gmail.com",
@@ -112,4 +110,43 @@ function emailSend() {
           message => alert(message)
      );
 }
-*/
+emailSend();
+
+
+//Scrool Reveals 
+const sr = ScrollReveal({
+     origin: 'top',
+     distance: '80px',
+     duration: 2000,
+     reset: true
+ });
+//Scroll Home
+ sr.reveal('.home-data',{}); 
+ sr.reveal('.home-image',{delay: 200}); 
+ sr.reveal('.home-social',{delay: 400});
+
+//Scroll About
+sr.reveal('#about-title',{}); 
+sr.reveal('.about-image',{delay: 400}); 
+sr.reveal('.about-text',{delay: 400}); 
+
+//Scroll Skills
+sr.reveal('#skills-title',{}); 
+sr.reveal('.skills-links',{}); 
+sr.reveal('.skill-card',{interval: 200}); 
+sr.reveal('.skills-image',{delay: 600});
+
+//Scroll Services
+sr.reveal('#services-title',{}); 
+sr.reveal('.services-content',{delay: 400}); 
+sr.reveal('.card',{interval: 400}); 
+
+//Scroll Contact
+sr.reveal('#contact-title',{}); 
+sr.reveal('.form-group',{interval: 200}); 
+sr.reveal('.btn',{delay: 1000}); 
+
+//Scroll Footer
+sr.reveal('.footer-name',{}); 
+sr.reveal('.footer-social-link',{interval: 200}); 
+sr.reveal('.footer-cop',{delay: 800}); 

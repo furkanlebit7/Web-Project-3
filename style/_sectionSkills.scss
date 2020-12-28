@@ -1,6 +1,8 @@
 .skills-content{
     position: relative;
     top: 230px;
+    display: flex;
+    justify-content: space-around;
 }
 .skills-exception-header{
     font-weight: bold;
@@ -82,51 +84,67 @@
     width: 70%;
 }
 
-@media (max-width:992px){
-    .skills-data{
-        position: relative;
-        left: 0px;
-        width: 65%;
-    }
-    .skills-image{
-        width: 20%;
-        img{
+
+@media screen and (max-width:992px){
+    .skills-content{
+        justify-content: space-between;
+        
+        .skills-image{
+            width: 35%;
             position: relative;
-            top: 50px;
-            right: 30px;
-            height: 300px;
+            img{
+                width: 135%;
+                position: absolute;
+                bottom: 30px;
+            }
+        }
+        .skills-data{
+            width: 55%;
+            .skill-card{
+                width: 100%;
+            }
+            .skills-exception-header{
+                font-size: 2rem;
+            }
+            .skills-exception{
+                font-size: 1.4rem;
+            }
+            .skill-card{
+                .skill-name{
+                    font-size: .7rem;
+                }
+                .skill-skillname{
+                    font-size: 1.4rem;
+                }
+                .skill-percentage{
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
-@media (max-width:768px){
-    .skills-data{
-        top: 50px;
-        order: 2;
-        width: 100%;
+@media screen and (max-width:610px){
+    #skills{
+        height: 105vh;
     }
-    .section-title{
-        top:100px;
-    }
+
     .skills-content{
         top: 100px;
-        height: 80%;
-        display: flex;
+        align-items: center;
         flex-direction: column;
-    }
-    .skills-links{
-        text-align: center;
-    }
-    .skill-card{
-        width: 100%;
-    }
-    .skills-image{
-        text-align: center;
-        width: 100%;
-        height: 400px;
-        top: 0px;
-        img{
+
+        .skills-data{
+            order: 1;
+            width: 80%;
+        }
+
+        .skills-image{
+            width: 50%;
             top: 0px;
-            height: 400px;
+            img{
+                width: 100%;
+                position: relative;
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 * {
   font-size: 10px;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -63,7 +63,7 @@ main {
   right: 30px;
   height: 80px;
   width: 40px;
-  z-index: 1000000;
+  z-index: 100;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: 0.5s;
@@ -74,6 +74,16 @@ main {
   bottom: 30px;
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 610px) {
+  .section-title {
+    top: 70px;
+  }
+  .backtotop {
+    width: 30px;
+    height: 65px;
+  }
 }
 
 header {
@@ -87,7 +97,7 @@ header {
   background-color: #522027;
   -webkit-box-shadow: 2px 2px 12px rgba(219, 174, 174, 0.5);
           box-shadow: 2px 2px 12px rgba(219, 174, 174, 0.5);
-  z-index: 1000;
+  z-index: 10000;
   height: 64px;
 }
 
@@ -130,6 +140,7 @@ nav {
 }
 
 .nav-links {
+  z-index: 10000;
   margin-bottom: 0px;
   width: 40%;
   display: -webkit-box;
@@ -165,13 +176,13 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .nav-links {
     width: auto;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /*
     if there is a scroll under the screen use:
     //body{overflow-x:hidden} */
@@ -266,9 +277,30 @@ nav {
 }
 
 .home-data {
+  width: 50%;
   bottom: 100px;
   position: relative;
   left: 100px;
+}
+
+.home-data .home-title-a {
+  margin-top: 20px;
+  width: 145px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #7C1424;
+  color: #eeeded;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.home-data .home-title-a:hover {
+  border: 2px solid #7C1424;
+  color: #7C1424;
+  background-color: white;
+  font-weight: 700;
 }
 
 .home-data .home-title, .home-data .typing {
@@ -318,26 +350,6 @@ nav {
 
 #htb {
   outline: none;
-}
-
-.home-title-button {
-  margin-top: 20px;
-  width: 145px;
-  height: 50px;
-  border-radius: 8px;
-  background-color: #7C1424;
-  color: #eeeded;
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border: none;
-}
-
-.home-title-button:hover {
-  border: 2px solid #7C1424;
-  color: #7C1424;
-  background-color: white;
-  font-weight: 700;
 }
 
 .home-image {
@@ -391,30 +403,81 @@ nav {
   color: #00ACED;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+  .home-data {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .home-section {
-    display: inline-block;
-  }
-  .home-image {
-    position: relative;
-    bottom: 0;
-  }
-  .home-image img {
-    position: absolute;
-    right: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .home-data {
-    top: 10%;
+    width: 100%;
+    top: 50px;
+  }
+  .home-image {
+    width: 100%;
+    bottom: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .home-social {
-    left: 10%;
+    left: 0px;
     width: 40%;
   }
+  .home-social ul {
+    padding-left: 0px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .home-data .home-title, .home-data .typing {
+    line-height: 1.5;
+    font-size: 5rem;
+  }
+  .home-data .home-title .home-title-name, .home-data .typing .home-title-name {
+    font-size: 5rem;
+    color: #7C1424;
+    font-weight: bold;
+  }
+  .home-data .home-title-a {
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .home-image {
+    width: 80%;
+    right: 100px;
+  }
+  .home-image img {
+    width: 80%;
+  }
+}
+
+.aaa {
+  width: 300px;
+  height: 200px;
+  background-color: black;
 }
 
 .about-content {
   top: 280px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container {
@@ -442,52 +505,64 @@ nav {
   font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .about-content {
-    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-content .about-image {
     position: relative;
+    width: 35%;
   }
-  .about-image {
+  .about-content .about-image img {
     position: absolute;
-    width: 40%;
-    left: 0px;
-    top: 60px;
+    width: 100%;
+    bottom: 20px;
   }
-  .about-image img {
-    width: 320px;
+  .about-content .about-text {
+    width: 65%;
   }
-  .about-text {
-    position: absolute;
-    width: 55%;
-    right: 0px;
+  .about-content .about-text .about-data-header {
+    font-size: 2.3rem;
+  }
+  .about-content .about-text .about-data-text {
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
-  .about-image {
-    top: 0;
+@media screen and (max-width: 610px) {
+  .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    position: relative;
-    text-align: center;
   }
-  .about-text {
-    top: 0;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    top: 0;
+  .about-content .about-image {
+    top: 120px;
+    width: 50%;
   }
-  .about-content {
-    top: 200px;
+  .about-content .about-image img {
+    width: 100%;
+  }
+  .about-content .about-text {
+    position: relative;
+    top: 80px;
+    width: 100%;
   }
 }
 
 .skills-content {
   position: relative;
   top: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .skills-exception-header {
@@ -597,60 +672,71 @@ nav {
   width: 70%;
 }
 
-@media (max-width: 992px) {
-  .skills-data {
-    position: relative;
-    left: 0px;
-    width: 65%;
+@media screen and (max-width: 992px) {
+  .skills-content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .skills-image {
-    width: 20%;
-  }
-  .skills-image img {
+  .skills-content .skills-image {
+    width: 35%;
     position: relative;
-    top: 50px;
-    right: 30px;
-    height: 300px;
+  }
+  .skills-content .skills-image img {
+    width: 135%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .skills-content .skills-data {
+    width: 55%;
+  }
+  .skills-content .skills-data .skill-card {
+    width: 100%;
+  }
+  .skills-content .skills-data .skills-exception-header {
+    font-size: 2rem;
+  }
+  .skills-content .skills-data .skills-exception {
+    font-size: 1.4rem;
+  }
+  .skills-content .skills-data .skill-card .skill-name {
+    font-size: .7rem;
+  }
+  .skills-content .skills-data .skill-card .skill-skillname {
+    font-size: 1.4rem;
+  }
+  .skills-content .skills-data .skill-card .skill-percentage {
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 768px) {
-  .skills-data {
-    top: 50px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 100%;
-  }
-  .section-title {
-    top: 100px;
+@media screen and (max-width: 610px) {
+  #skills {
+    height: 105vh;
   }
   .skills-content {
     top: 100px;
-    height: 80%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .skills-links {
-    text-align: center;
+  .skills-content .skills-data {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 80%;
   }
-  .skill-card {
-    width: 100%;
-  }
-  .skills-image {
-    text-align: center;
-    width: 100%;
-    height: 400px;
+  .skills-content .skills-image {
+    width: 50%;
     top: 0px;
   }
-  .skills-image img {
-    top: 0px;
-    height: 400px;
+  .skills-content .skills-image img {
+    width: 100%;
+    position: relative;
   }
 }
 
@@ -729,33 +815,30 @@ nav {
   text-align: center;
 }
 
-@media (max-width: 1240px) {
-  .card {
-    width: 50%;
-    margin: 20px;
-    height: 180px;
+@media screen and (max-width: 815px) {
+  .services-content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .services-content .card {
+    margin: auto 20px;
+    width: 25%;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 610px) {
   .services-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    top: 80px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: auto;
     width: 100%;
-    top: 172px;
-    margin: auto;
+    height: 85%;
+  }
+  .services-content .card {
+    height: 25%;
+    width: 40%;
   }
 }
 
@@ -824,13 +907,13 @@ form .btn:hover {
   margin: 0px auto;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   .contact-content {
     width: 600px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 610px) {
   .contact-content {
     width: 400px;
   }

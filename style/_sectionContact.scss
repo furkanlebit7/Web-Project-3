@@ -52,12 +52,13 @@ form {
     height: 5%;
     margin: 0px auto;
 }
-@media (max-width:1024px){
+
+@media screen and (max-width:992px){
     .contact-content{
         width: 600px;
     }
 }
-@media (max-width:768px){
+@media screen and (max-width:610px){
     .contact-content{
         width: 400px;
     }

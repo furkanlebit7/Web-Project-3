@@ -1,7 +1,7 @@
 *{
     font-size: 10px;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -22,6 +22,8 @@ li{
 main{
   margin-top: 64px;
 }
+
+
 
 .section{
   position: relative;
@@ -58,7 +60,7 @@ main{
   right: 30px;
   height: 80px;
   width: 40px;
-  z-index: 1000000;
+  z-index: 100;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
@@ -67,6 +69,15 @@ main{
   bottom: 30px;
   visibility: visible;
   opacity: 1;
+}
+@media screen and (max-width:610px){
+  .section-title{
+    top: 70px;
+  }
+  .backtotop{
+    width: 30px;
+    height: 65px;
+  }
 }
 
 

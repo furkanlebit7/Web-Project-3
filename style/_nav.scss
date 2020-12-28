@@ -6,7 +6,7 @@ header{
     align-items: center;
     background-color: #522027;
     box-shadow:2px 2px 12px rgba(219, 174, 174, 0.5); 
-    z-index: 1000;
+    z-index: 10000;
     height: 64px;
 }
 
@@ -36,6 +36,7 @@ nav{
 }
 
 .nav-links{
+    z-index: 10000;
     margin-bottom: 0px;
     width: 40%;
     display: flex;
@@ -66,7 +67,7 @@ nav{
     transition: all 0.3s ease;
 }
 
-@media  (max-width:1024px){
+@media screen and  (max-width:1024px){
 
     .nav-links{
     width: auto;
@@ -74,7 +75,7 @@ nav{
 
 }
 
-@media  (max-width:768px){
+@media screen and (max-width:768px){
     /*
     if there is a scroll under the screen use:
     //body{overflow-x:hidden} */
